@@ -1,0 +1,61 @@
+/* MainPage.css */
+
+.main-page {
+  text-align: center; /* Center the content */
+  padding: 40px 0;
+}
+
+.subject-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px; /* Shorten the padding */
+  margin: 10px;
+  width: 60%; /* Adjust the width as needed */
+  display: inline-block; /* Display boxes in a row */
+  vertical-align: top; /* Align boxes at the top */
+}
+
+.subject-title {
+  font-size: 20px; /* Adjust the font size */
+  margin-bottom: 5px; /* Adjust the margin */
+}
+
+.loading-bar {
+  width: 100%;
+  height: 15px; /* Shorten the height */
+  background-color: #f0f0f0;
+  border-radius: 5px; /* Adjust the border-radius */
+  position: relative;
+  margin-bottom: 5px; /* Adjust the margin */
+}
+
+.progress {
+  height: 100%;
+  background-color: green;
+  border-radius: 5px; /* Adjust the border-radius */
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-label {
+  font-size: 14px; /* Adjust the font size */
+  margin-top: 5px; /* Adjust the margin */
+}
+
+.attendance-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.attendance-button:hover {
+  background-color: darkblue;
+}
+
+.attendance-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
