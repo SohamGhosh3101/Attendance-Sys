@@ -1,6 +1,6 @@
 // App.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import LandingPage from './components/LandingPage';
 import MainPage from './components/MainPage';
@@ -44,6 +44,10 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    document.title = loggedIn ? `Welcome, ${username}!` : 'AttendPlus';
+  }, [loggedIn, username]);
+  
   return (
     <div className="App">
       {!loggedIn ? (
@@ -52,7 +56,7 @@ function App() {
         <>
           <MainPage
             username={username}
-            semester="7"
+            semester="8"
             attendance={totalAttendance} // Use totalAttendance instead of hardcoded value
             subjects={attendanceData}
             onMarkAttendance={handleMarkAttendance}
